@@ -1,34 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+
+#start-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#start-button:hover {
+    background-color: #0b7dda;
+}
 .container {
     display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 
 .grid {
     width: 200px;
     height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(0, 0, 0); 
-
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 colunas */
+    grid-template-rows: repeat(20, 1fr); /* 20 linhas */
+    gap: 1px; /* Espaço entre os blocos */
+    background-color: #444;
+    border: 2px solid #333;
 }
 
 .grid div {
-    height: 20px;
-    width: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo dos blocos */
 }
-
 .tetromino{
     background-color: rgb(255, 17, 0);
 }
 
 
-.mini-grid{
-    margin-left: 50;
+.mini-grid {
+    margin-top: 20px;
     width: 80px;
     height: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(0, 0, 0); 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    grid-template-rows: repeat(4, 1fr); /* 4 linhas */
+    gap: 1px; /* Espaço entre os blocos */
+    background-color: #444;
+    border: 2px solid #333;
+}
+
+.mini-grid div {
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo dos blocos */
 }
 
 .mini-grid div {
