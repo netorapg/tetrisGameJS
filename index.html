@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <script src="app.js" charset=""UTF-8"></script>
     <link rel="stylesheet" href="style.css"></link>
-    <title>Basic Tetris</title>
+    <title>Anotheer Tetris Game</title>
 </head>
 <body>
 
+   <header>
+    <h1>Another Tetris Game by netorapg</h1>
+   </header>
+   <main class="main-content">
     <h3>Score:<span id="score">0</span></h3>
     <buttom id="start-button">Start/Pause</buttom>
-
     <div class="container">
         <div class="grid">
             <div></div>
@@ -244,6 +247,15 @@
             <div></div>
         </div>
     </div>
+    
+   </main>
    
 </body>
+<footer class="footer">
+    <p>&copy; <span id="ano-atual"></span> All rights reserved by netorapg</p>
+</footer>
 </html>
+ <script>
+        const anoAtual = new Date().getFullYear();
+        document.getElementById('ano-atual').textContent = anoAtual;
+    </script>
